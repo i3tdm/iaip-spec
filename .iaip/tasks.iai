@@ -1,0 +1,30 @@
+kind: tasks
+name: "IAIP Task Rules"
+task_model:
+  fields:
+    - id
+    - title
+    - description
+    - steps
+    - acceptance
+    - priority
+    - status
+  required:
+    - title
+    - description
+    - steps
+output:
+  mode: inline   # none | inline | file
+  path: ".iaip/tasks/"
+  format: md       # md | yaml | jsonl
+workflow:
+  states: [todo, doing, review, done]
+  default_state: todo
+planning:
+  prefer_small_tasks: true
+  max_steps_per_task: 12
+---
+# Texto livre (regras e notas do usuário)
+- O IAIP é um protocolo: tarefas aqui descrevem trabalho de documentação/spec, não execução automática.
+- Sempre escrever tasks em linguagem simples e verificável.
+- Se houver ambiguidade, gerar uma task de "clarificação" ao invés de assumir.

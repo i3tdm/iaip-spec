@@ -1,0 +1,23 @@
+kind: context
+name: "IAIP Protocol Context"
+scope: global
+priority_paths:
+  - "spec/"
+  - "registry/"
+  - "notes/"
+---
+# Texto livre (contexto do usuário)
+Este repositório define o IAIP (Instructions AI Protocol).
+
+Objetivo:
+- Padronizar como instruções para IA são organizadas dentro de um repositório.
+- Ser agnóstico de IDE/agente/ferramenta.
+- Garantir orientação determinística (sem regras implícitas).
+
+Estrutura esperada (alto nível):
+- spec/: regras normativas do protocolo
+- notes/: explicações não normativas (motivação, decisões)
+- registry/: chaves/kinds reservados (quando aplicável)
+- examples/: exemplos de adoção (opcional)
+
+Princípio: o Consumer deve sempre começar pelo manifest apontado na configuração do usuário.

@@ -1,0 +1,28 @@
+kind: references
+name: "IAIP Reference Sources"
+policy: prefer   # prefer | allow | deny
+sources:
+  - id: repo
+    type: repo
+    value: "https://github.com/i3tdm/iaip-spec"
+    authority: primary
+    use_for: [spec, rules, examples]
+    scope: global
+
+  - id: rfc-001
+    type: file
+    value: "spec/v0/manifest.md"
+    authority: primary
+    use_for: [resolution, precedence, conflicts]
+    scope: global
+
+  - id: readme
+    type: file
+    value: "README.md"
+    authority: primary
+    use_for: [overview, positioning, non-goals]
+    scope: global
+---
+# Texto livre (regras e notas do usuário)
+- Sempre preferir fontes primárias do próprio repositório para evitar drift.
+- Se for necessário citar fora do repo, registrar como source com authority apropriada.

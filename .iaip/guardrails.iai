@@ -1,0 +1,11 @@
+kind: guardrails
+name: "IAIP Guardrails"
+enforcement: hard      # hard | soft
+severity: critical     # critical | warning
+auto_fix: false
+---
+# Texto livre (regras do usuário)
+- IAIP é orientação, não execução: este protocolo não define agentes, nem ferramentas, nem automação.
+- Evitar inferência: se algo não estiver documentado, o Consumer deve pedir esclarecimento ou registrar como pendência.
+- Proibido misturar “spec normativa” com “notes não normativas” no mesmo arquivo.
+- Conflitos não podem ser resolvidos por suposição: em caso de ambiguidade relevante, o Consumer deve parar e alertar.

@@ -1,0 +1,14 @@
+kind: contract
+name: "IAIP Acceptance Contract"
+check_list_required: true
+validation_step: post-generation  # pre-commit | post-generation
+compliance_report: ""             # opcional: caminho sugerido
+---
+# Texto livre (critérios do usuário)
+Um conteúdo/documento é considerado "aceito" quando:
+- Está consistente com as RFCs normativas.
+- Não introduz novas regras sem registrar (ex: novo kind/chave).
+- Não contradiz decisões registradas em notes (quando aplicável).
+- Mantém linguagem clara e orientada a consumo por ferramentas e humanos.
+
+Se houver divergência entre documentos normativos, isso deve virar uma atualização de RFC (não uma interpretação).

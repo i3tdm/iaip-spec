@@ -1,0 +1,22 @@
+kind: tracking
+name: "IAIP Tracking & Evidence"
+memory:
+  enabled: true
+  path: ""
+  max_size: 0
+history:
+  enabled: true
+  path: ""
+  max_size: 0
+audit:
+  enabled: true
+  path: ""
+  claim_evidence: true
+---
+# Texto livre (regras do usuário)
+Tracking é opcional, mas quando habilitado:
+- Claims relevantes devem apontar evidência (arquivo + trecho/linha quando possível).
+- História deve ser curta e prática (não duplicar spec).
+- Auditoria existe para reduzir alucinação e drift de regras ao longo do tempo.
+
+O Consumer pode guardar logs onde o usuário preferir; o protocolo não impõe caminho.

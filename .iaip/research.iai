@@ -1,0 +1,17 @@
+kind: research
+name: "IAIP Research Guidance"
+limits:
+  max_iterations: 5
+  stop_on_ambiguity: true
+logging:
+  enabled: true
+  path: ".iaip/research/"
+  format: md       # md | yaml | jsonl
+evidence:
+  required: true
+  min_sources: 1
+---
+# Texto livre (regras e notas do usuário)
+- Pesquisa aqui significa: investigar documentação do próprio repo e registrar descobertas de forma rastreável.
+- Evitar “inventar”: se não encontrar evidência, registrar hipótese + onde procurou.
+- Ao falhar, salvar resultado parcial e próximos passos.

@@ -1,0 +1,62 @@
+kind: manifest
+version: "v0"
+name: "IAIP Entry Manifest"
+enabled:
+  - context
+  - guardrails
+  - contract
+  - tasks
+  - references
+  - research
+  - tracking
+  - prompt
+
+# Cada kind pode ser definido de 2 formas:
+# - metadata: instrução inline (sem include)
+# - include: lista de arquivos (sem metadata)
+context:
+  include:
+    merge: []
+    override: []
+
+guardrails:
+  include:
+    merge: []
+    override: []
+
+contract:
+  include:
+    merge: []
+    override: []
+
+tasks:
+  include:
+    merge: []
+    override: []
+
+references:
+  include:
+    merge: []
+    override: []
+
+research:
+  include:
+    merge: []
+    override: []
+
+tracking:
+  include:
+    merge: []
+    override: []
+
+prompt:
+  include:
+    merge: []
+    override: []
+---
+# Texto livre (regras do usuário)
+- Este arquivo é o ponto de entrada do IAIP.
+- A localização do manifest é definida pelo usuário/Consumer (ex: protocol_iaip: ./path/manifest.iai).
+- Include é apenas referência de arquivos; o protocolo não impõe estrutura de pastas.
+- Regra de exclusividade: metadata e include não podem coexistir no mesmo kind.
+- Se houver conflito no mesmo nível de prioridade, o Consumer deve parar e avisar.
